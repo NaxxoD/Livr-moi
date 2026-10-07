@@ -1,0 +1,56 @@
+.favoris {
+  min-height: 100vh;
+  background-image: url('../assets/fleur.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+}
+
+.favoris-body {
+  display: flex;
+  flex: 1;
+}
+
+.favoris-main {
+  flex: 1;
+  padding: 24px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.favoris-main h1 {
+  font-size: 28px;
+  color: var(--brown);
+}
+
+.favoris-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-top: 80px;
+  color: var(--text-muted);
+}
+
+.favoris-empty p {
+  font-size: 16px;
+}
+
+.favoris-empty button {
+  background: var(--brown);
+  color: var(--cream);
+  border: none;
+  border-radius: 999px;
+  padding: 10px 32px;
+  font-family: inherit;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.favoris-empty button:hover {
+  background: var(--brown-mid);
+}

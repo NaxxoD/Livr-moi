@@ -1,0 +1,23 @@
+# Normalise tout en LF dans le repo
+* text=auto eol=lf
+
+# Fichiers explicitement texte
+*.py text eol=lf
+*.js text eol=lf
+*.jsx text eol=lf
+*.ts text eol=lf
+*.tsx text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+
+# Fichiers binaires (pas de conversion)
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.ico binary
+*.db binary

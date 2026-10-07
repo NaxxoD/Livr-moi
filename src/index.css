@@ -1,0 +1,59 @@
+:root {
+    --cream: #f7edd8;
+    --cream-dark: #eddfc4;
+    --brown: #5c3416;
+    --brown-mid: #8b5e3c;
+    --brown-light: #c4986a;
+    --text: #3d2010;
+    --text-muted: #7a5c42;
+    --border: #d4b896;
+    --card-bg: rgba(247, 237, 216, 0.95);
+    --shadow: 0 4px 20px rgba(92, 52, 22, 0.15);
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 16px;
+    color: var(--text);
+    background: var(--cream);
+}
+
+[data-theme="dark"] {
+    --cream: #1a1a2e;
+    --cream-dark: #16213e;
+    --brown: #e8c99a;
+    --brown-mid: #c4986a;
+    --brown-light: #8b5e3c;
+    --text: #f0e6d3;
+    --text-muted: #b8a99a;
+    --border: #3d3d5c;
+    --card-bg: rgba(26, 26, 46, 0.95);
+    --shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    background: var(--cream);
+    color: var(--text);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--cream);
+    color: var(--text);
+    transition: background 0.3s, color 0.3s;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    font-weight: normal;
+    color: var(--brown);
+}
+
+p {
+    margin: 0;
+}
+
+button {
+    cursor: pointer;
+    font-family: inherit;
+}

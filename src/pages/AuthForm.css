@@ -1,0 +1,113 @@
+.auth-page {
+  min-height: 100vh;
+  background-image: url('../assets/fleur.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 48px 56px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  backdrop-filter: blur(4px);
+  box-shadow: var(--shadow);
+  width: 100%;
+  max-width: 400px;
+}
+
+.auth-card h1 {
+  font-size: 24px;
+  letter-spacing: 2px;
+  color: var(--brown);
+  text-align: center;
+}
+
+.auth-card h2 {
+  font-size: 18px;
+  color: var(--brown-mid);
+  text-align: center;
+  margin-top: -12px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.auth-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.auth-field label {
+  font-size: 13px;
+  color: var(--brown-mid);
+  letter-spacing: 0.5px;
+}
+
+.auth-field input {
+  background: var(--cream);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-family: inherit;
+  font-size: 14px;
+  color: var(--text);
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.auth-field input:focus {
+  border-color: var(--brown-mid);
+}
+
+.auth-error {
+  font-size: 13px;
+  color: #b94040;
+  background: #fdf0f0;
+  border: 1px solid #e8c0c0;
+  border-radius: 8px;
+  padding: 8px 12px;
+}
+
+.auth-btn {
+  background: var(--brown);
+  color: var(--cream);
+  border: none;
+  border-radius: 999px;
+  padding: 12px;
+  font-family: inherit;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 4px;
+  transition: background 0.2s;
+}
+
+.auth-btn:hover {
+  background: var(--brown-mid);
+}
+
+.auth-link {
+  text-align: center;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.auth-link a {
+  color: var(--brown-mid);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.auth-link a:hover {
+  color: var(--brown);
+}

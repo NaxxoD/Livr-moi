@@ -1,0 +1,80 @@
+.userbar {
+  width: 52px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px 8px;
+  background: var(--card-bg);
+  border-left: 1px solid var(--border);
+  backdrop-filter: blur(6px);
+  min-height: calc(100vh - 57px);
+  overflow: hidden;
+  transition: width 0.25s ease;
+}
+
+.userbar:hover {
+  width: 160px;
+}
+
+.userbar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.userbar-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: var(--brown-mid);
+  font-size: 14px;
+  transition: background 0.2s, color 0.2s;
+  cursor: pointer;
+}
+
+.userbar-item:hover,
+.userbar-item.active {
+  background: var(--cream-dark);
+  color: var(--brown);
+}
+
+.userbar-icon {
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.userbar-label {
+  font-size: 13px;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.2s ease 0.05s;
+}
+
+.userbar:hover .userbar-label {
+  opacity: 1;
+}
+
+.userbar-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.userbar-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--brown);
+  color: var(--cream);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 8px 12px;
+  cursor: pointer;
+}

@@ -1,0 +1,30 @@
+.genre-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.genre-filter button {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 6px 18px;
+  font-family: inherit;
+  font-size: 13px;
+  color: var(--brown-mid);
+  cursor: pointer;
+  backdrop-filter: blur(2px);
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.genre-filter button:hover {
+  background: var(--cream-dark);
+  color: var(--brown);
+  border-color: var(--brown-light);
+}
+
+.genre-filter button.active {
+  background: var(--brown);
+  color: var(--cream);
+  border-color: var(--brown);
+}

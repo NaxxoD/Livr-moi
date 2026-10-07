@@ -1,0 +1,56 @@
+.not-found {
+  min-height: 100vh;
+  background-image: url('../assets/fleur.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.not-found-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 48px 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  backdrop-filter: blur(4px);
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+.not-found-card h1 {
+  font-size: 72px;
+  color: var(--brown-light);
+  letter-spacing: 4px;
+}
+
+.not-found-card h2 {
+  font-size: 20px;
+  color: var(--brown);
+}
+
+.not-found-card p {
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+.not-found-btn {
+  margin-top: 8px;
+  background: var(--brown);
+  color: var(--cream);
+  border: none;
+  border-radius: 999px;
+  padding: 10px 36px;
+  font-family: inherit;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.not-found-btn:hover {
+  background: var(--brown-mid);
+}
